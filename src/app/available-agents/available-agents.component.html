@@ -1,0 +1,74 @@
+<div
+  class="max-w-4xl mx-auto p-[1rem] bg-white rounded-sm shadow-lg py-[2rem] mb-[3rem] rounded-b-lg"
+>
+  <div
+    class="flex justify-between gap-3 border-b border-[#D0D5DD] lg:pb-[3rem] pb-[2rem]"
+  >
+    <div
+      class="border border-[#D0D5DD] lg:py-[1rem] px-3 flex w-full justify-between items-center"
+    >
+      <h1>Picku up</h1>
+      <label class="switch">
+        <input type="checkbox" checked />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div
+      class="border border-[#D0D5DD] py-[1rem] px-3 flex w-full justify-between items-center"
+    >
+      <h1>Drop off</h1>
+      <label class="switch">
+        <input type="checkbox" checked />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <p class="text-[#111111] font-normal py-2">
+    would you like to search your preferred agent?
+  </p>
+  <div class="bg-[#F0F5F5] flex p-[1rem] flex-row gap-5">
+    <h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        class="main-grid-item-icon"
+        fill="none"
+        stroke="#28B877"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="4"
+      >
+        <circle cx="12" cy="12" r="10" />
+      </svg>
+    </h1>
+    <input
+      type=" text"
+      placeholder="Search"
+      class="outline-none bg-[#F0F5F5] w-full"
+    />
+  </div>
+  <div class="w-full my-[1rem]">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.796866054199!2d-88.05836652462848!3d30.695990974602022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4e297b23b65d%3A0x8876fed6d24aae7f!2sBishop%20State%20Community%20College!5e0!3m2!1sen!2sus!4v1717022541482!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      class="w-full"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+  <h1 class="text-[#1889F1] text-2xl py-3">Available Agents</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <app-shipping-agent-card></app-shipping-agent-card>
+    <app-inactive-shipping-agent-card></app-inactive-shipping-agent-card>
+    <app-shipping-agent-card></app-shipping-agent-card>
+    <app-inactive-shipping-agent-card></app-inactive-shipping-agent-card>
+  </div>
+  <button class="py-4 rounded-md bg-[#1889F1] w-full mt-[2rem] mb-[1rem]">
+    <h1 class="text-white text-center">Confirm</h1>
+  </button>
+</div>
